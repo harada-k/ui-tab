@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Tab UI demo</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<div class="TabUI js-tabUI">
+  <ul class="TabUI-tablist"
+      role="tablist"
+      aria-label="おすすめ記事リンク">
+    <li class="TabUI-item"
+        role="none presentation">
+      <button type="button"
+              class="TabUI-tab js-tab"
+              id="tab-news"
+              role="tab"
+              aria-controls="panel-news"
+              aria-selected="true"
+              tabindex="0">ニュース</button>
+    </li>
+    <li class="TabUI-item"
+        role="none presentation">
+      <button type="button"
+              class="TabUI-tab js-tab"
+              id="tab-popular"
+              role="tab"
+              aria-controls="panel-popular"
+              aria-selected="false"
+              tabindex="-1">人気記事</button>
+    </li>
+    <li class="TabUI-item"
+        role="none presentation">
+      <button type="button"
+              class="TabUI-tab js-tab"
+              id="tab-feature"
+              role="tab"
+              aria-controls="panel-feature"
+              aria-selected="false"
+              tabindex="-1">特集記事</button>
+    </li>
+  </ul>
+  <div class="TabUI-body">
+    <div class="TabUI-tabpanel js-tabpanel"
+         id="panel-news"
+         role="tabpanel"
+         aria-labelledby="tab-news"
+         aria-hidden="false"
+         tabindex="0">
+      <ol class="ArticleList">
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">lorem</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">ipsum</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">dolor</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">sit</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">amet</a>
+        </li>
+      </ol>
+    </div>
+    <div class="TabUI-tabpanel js-tabpanel"
+         id="panel-popular"
+         role="tabpanel"
+         aria-labelledby="tab-popular"
+         aria-hidden="true"
+         tabindex="0">
+      <ol class="ArticleList">
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">consectetur</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">adipiscing</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">elit</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">sed</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">do</a>
+        </li>
+      </ol>
+    </div>
+    <div class="TabUI-tabpanel js-tabpanel"
+         id="panel-feature"
+         role="tabpanel"
+         aria-labelledby="tab-feature"
+         aria-hidden="true"
+         tabindex="0">
+      <ul class="ArticleList">
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">eiusmod</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">tempor</a>
+        </li>
+        <li class="ArticleList-item">
+          <a href="#" class="ArticleList-link">incididunt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

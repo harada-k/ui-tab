@@ -1,0 +1,81 @@
+body {
+  margin: 10px;
+  background-color: ivory;
+  font-family: sans-serif;
+}
+
+.TabUI {
+  width: 300px;
+}
+
+.TabUI-tablist {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.TabUI-item {
+  border-width: 1px 1px 0 1px;
+  border-style: solid;
+  border-color: silver;
+  margin-bottom: -1px;
+}
+
+.TabUI-item:nth-child(n+2) {
+  margin-left: 5px;
+}
+
+.TabUI-tab {
+  display: block;
+  position: relative;
+  margin: 0;
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  padding: 0.25em 0.5em;
+  width: 100%;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+.TabUI-tab[aria-selected="true"] {
+  border-bottom-color: white;
+  background-color: white;
+  color: black;
+}
+
+.TabUI-tab[aria-selected="false"] {
+  border-color: silver;
+  background-color: whitesmoke;
+  color: dimgray;
+}
+
+.TabUI-tab[aria-selected="false"]:focus {
+  color: black;
+}
+
+.TabUI-body {
+  border-width: 1px;
+  border-style: solid;
+  border-color: silver;
+  background-color: white;
+}
+
+.TabUI-tabpanel {
+  padding: 1em 0.5em;
+}
+
+/*
+.TabUI-tabpanel[aria-hidden="false"] {
+  display: block;
+}
+*/
+
+.TabUI-tabpanel[aria-hidden="true"] {
+  display: none;
+}
+
+.ArticleList {
+  margin-top: 0;
+  margin-bottom: 0;
+}
